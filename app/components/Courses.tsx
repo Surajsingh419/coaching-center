@@ -70,20 +70,20 @@ export default function Courses() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+              className="group bg-white rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className={`w-14 h-14 ${course.bgColor} rounded-xl flex items-center justify-center flex-shrink-0`}>
-                  <course.icon className={`w-7 h-7 ${course.color.replace('from-', 'text-').replace('to-', '').split(' ')[0].replace('-500', '-600')}`} />
+              <div className="flex items-start gap-3 sm:gap-4 mb-4">
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 ${course.bgColor} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                  <course.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${course.color.replace('from-', 'text-').replace('to-', '').split(' ')[0].replace('-500', '-600')}`} />
                 </div>
                 <div>
-                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
                     {course.title}
                   </h3>
                 </div>
               </div>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
                 {course.description}
               </p>
 
@@ -92,7 +92,7 @@ export default function Courses() {
                 {course.features.map((feature) => (
                   <span
                     key={feature}
-                    className={`px-3 py-1 rounded-full text-sm font-medium ${course.bgColor} ${course.color.replace('from-', 'text-').replace('to-', '').split(' ')[0].replace('-500', '-700')}`}
+                    className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${course.bgColor} ${course.color.replace('from-', 'text-').replace('to-', '').split(' ')[0].replace('-500', '-700')}`}
                   >
                     {feature}
                   </span>

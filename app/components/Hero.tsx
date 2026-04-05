@@ -53,7 +53,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-4 sm:mb-6"
             >
               <span className="text-gray-900">Build Your</span>
               <br />
@@ -67,7 +67,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0 px-2 sm:px-0"
             >
               Join <span className="font-semibold text-primary-700">Momentum Institute</span> for IIT-JEE & NEET Success. 
               Expert faculty, proven results, and personalized attention for your success.
@@ -78,20 +78,20 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start px-4 sm:px-0"
             >
               <button
                 onClick={handleApplyClick}
-                className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2"
+                className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2"
               >
                 Apply Now
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
                 onClick={handleWhatsAppClick}
-                className="group bg-white text-gray-800 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2 border border-gray-200"
+                className="group bg-white text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2 border border-gray-200"
               >
-                <MessageCircle className="w-5 h-5 text-green-500" />
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500" />
                 WhatsApp Enquiry
               </button>
             </motion.div>
@@ -101,19 +101,19 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200"
+              className="grid grid-cols-3 gap-3 sm:gap-6 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200 px-2 sm:px-0"
             >
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-primary-600">500+</div>
-                <div className="text-sm text-gray-600">Students Selected</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-600">500+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Students Selected</div>
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-accent-500">10+</div>
-                <div className="text-sm text-gray-600">Years Experience</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-accent-500">10+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Years Experience</div>
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-primary-600">95%</div>
-                <div className="text-sm text-gray-600">Success Rate</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-600">95%</div>
+                <div className="text-xs sm:text-sm text-gray-600">Success Rate</div>
               </div>
             </motion.div>
           </motion.div>
