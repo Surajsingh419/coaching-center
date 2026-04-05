@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+//add new comment
 
 export const metadata: Metadata = {
   title: 'Momentum Institute Lakhimpur | Best Coaching for IIT-JEE & NEET',
